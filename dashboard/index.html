@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Confidential Computing Lab Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Confidential Computing Lab</h1>
+    <p>SGX enclave and SEV VM simulator</p>
+  </header>
+  <main>
+    <section>
+      <h2>Enclave Lifecycle</h2>
+      <div id="enclave-status" class="panel">Loading status...</div>
+      <button id="run-workload">Run Keyword Search</button>
+    </section>
+    <section>
+      <h2>VM Encryption Visualiser</h2>
+      <div id="vm-status" class="panel">Launch a VM to view details.</div>
+      <button id="launch-vm">Launch VM</button>
+    </section>
+    <section>
+      <h2>Attestation Viewer</h2>
+      <pre id="attestation" class="panel"></pre>
+    </section>
+  </main>
+  <script src="dashboard.js"></script>
+</body>
+</html>
